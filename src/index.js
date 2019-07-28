@@ -3,9 +3,12 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 
 import AppRouter from "./routers/AppRouter";
+import configureStore from "./store/configureStore";
 
 import "normalize-css/normalize.css";
 import "./index.scss";
+
+const store = configureStore();
 
 ReactDOM.render(<AppRouter />, document.getElementById("root"));
 
