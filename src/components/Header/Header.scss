@@ -4,4 +4,8 @@
     .nav__link {
         padding: 0 1rem 0.5rem;
     }
+    .nav__link--active {
+        color: red;
+        font-weight: bold;
+    }
 }

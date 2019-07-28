@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b674ed68-b962-43e6-8f99-34185d24f0fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +78,7 @@
       <workItem from="1564268359211" duration="5353000" />
       <workItem from="1564273848976" duration="36000" />
       <workItem from="1564273906057" duration="1452000" />
+      <workItem from="1564275393562" duration="814000" />
     </task>
     <task id="LOCAL-00001" summary="added basic router entries/functionality">
       <created>1564272500253</created>
@@ -93,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564273439814</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added header with navigation links">
+      <created>1564275647169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1564275647169</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added basic router entries/functionality" />
     <MESSAGE value="added &quot;404&quot;-like functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;404&quot;-like functionality" />
+    <MESSAGE value="added header with navigation links" />
+    <option name="LAST_COMMIT_MESSAGE" value="added header with navigation links" />
   </component>
 </project>

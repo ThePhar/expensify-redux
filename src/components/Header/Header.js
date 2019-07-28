@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
 
@@ -7,10 +7,10 @@ const Header = () => (
     <header>
         <h1>Expensify</h1>
         <nav className="nav">
-            <Link className="nav__link" to="/">Home</Link>
-            <Link className="nav__link" to="/create">Create New Expense</Link>
-            <Link className="nav__link" to="/edit">Edit Expenses</Link>
-            <Link className="nav__link" to="/help">Help</Link>
+            <NavLink className="nav__link" activeClassName="nav__link--active" to="/" exact>Home</NavLink>
+            <NavLink className="nav__link" activeClassName="nav__link--active" to="/create">Create New Expense</NavLink>
+            <NavLink className="nav__link" activeClassName="nav__link--active" to="/edit">Edit Expense</NavLink>
+            <NavLink className="nav__link" activeClassName="nav__link--active" to="/help">Help</NavLink>
         </nav>
     </header>
 );
