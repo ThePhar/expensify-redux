@@ -15,8 +15,8 @@ const store = configureStore();
 
 // TODO: Remove dummy data.
 store.dispatch(addExpense({ description: "Rent", amount: 85000 }));
-store.dispatch(addExpense({ description: "Water bill", amount: 3000 }));
-store.dispatch(addExpense({ description: "Gas bill", amount: 15000 }));
+store.dispatch(addExpense({ description: "Water bill", amount: 3000, createdAt: 1000 }));
+store.dispatch(addExpense({ description: "Gas bill", amount: 15000, createdAt: -1000 }));
 store.dispatch(setTextFilter("bill"));
 
 // TODO: Remove timeout to check filter works.
