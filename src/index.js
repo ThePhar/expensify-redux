@@ -8,7 +8,6 @@ import "react-dates/lib/css/_datepicker.css";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import { addExpense } from "./actions/expenses";
-import { setTextFilter, sortByAmount } from "./actions/filters";
 
 import "normalize-css/normalize.css";
 import "./index.scss";
@@ -19,12 +18,6 @@ const store = configureStore();
 store.dispatch(addExpense({ description: "Rent", amount: 85000 }));
 store.dispatch(addExpense({ description: "Water bill", amount: 3000, createdAt: 1000 }));
 store.dispatch(addExpense({ description: "Gas bill", amount: 15000, createdAt: -1000 }));
-store.dispatch(setTextFilter("bill"));
-
-// TODO: Remove timeout to check filter works.
-setTimeout(() => {
-    store.dispatch(sortByAmount())
-}, 3000);
 
 const app = (
     <Provider store={store}>

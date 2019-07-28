@@ -5,6 +5,10 @@ $l-size:  3.2rem;
 $xl-size: 4.8rem;
 
 /* Default HTML styling */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
