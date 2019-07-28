@@ -1,14 +1,12 @@
 import React from "react";
-import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 import Header from "../components/Header/Header";
-
-// TODO: Dummy components for testing React-Router. Move to separate folders/files for each component.
-const DashboardPage = () => ( <div>This is from my dashboard component.</div> );
-const AddExpensePage = () => ( <div>This is from my add expense component.</div> );
-const EditExpensePage = () => ( <div>This is from my edit expense component.</div> );
-const HelpPage = () => ( <div>This is from my help component.</div> );
-const NotFoundPage = () => ( <div>404 - <Link to="/">Go Home</Link></div> );
+import DashboardPage from "../components/DashboardPage/DashboardPage";
+import AddExpensePage from "../components/AddExpensePage/AddExpensePage";
+import EditExpensePage from "../components/EditExpensePage/EditExpensePage";
+import HelpPage from "../components/HelpPage/HelpPage";
+import NotFoundPage from "../components/NotFoundPage/NotFoundPage";
 
 const AppRouter = () => (
     <BrowserRouter>
