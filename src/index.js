@@ -6,7 +6,7 @@ import * as serviceWorker from "./serviceWorker";
 import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import { addExpense } from "./actions/expenses";
-import { sortByAmount } from "./actions/filters";
+import { setTextFilter, sortByAmount } from "./actions/filters";
 
 import "normalize-css/normalize.css";
 import "./index.scss";
@@ -17,6 +17,7 @@ const store = configureStore();
 store.dispatch(addExpense({ description: "Rent", amount: 85000 }));
 store.dispatch(addExpense({ description: "Water bill", amount: 3000 }));
 store.dispatch(addExpense({ description: "Gas bill", amount: 15000 }));
+store.dispatch(setTextFilter("bill"));
 
 // TODO: Remove timeout to check filter works.
 setTimeout(() => {
