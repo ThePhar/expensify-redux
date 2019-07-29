@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Expensify Redux",
+  "name": "Expensify Redux",
   "icons": [
     {
       "src": "favicon.ico",
