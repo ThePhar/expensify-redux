@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render summary of a single expense with singular noun. 1`] = `
+<p>
+  Viewing 
+  1
+   expense 
+  totalling 
+  $1,095.00
+</p>
+`;
+
+exports[`Should render summary of multiple expenses with plural noun. 1`] = `
+<p>
+  Viewing 
+  3
+   expenses 
+  totalling 
+  $1,141.95
+</p>
+`;
