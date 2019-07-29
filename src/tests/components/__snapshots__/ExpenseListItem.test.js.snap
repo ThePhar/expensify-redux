@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render ExpenseListItem. 1`] = `
+<tr
+  style={
+    Object {
+      "border": "1px solid black",
+    }
+  }
+>
+  <td
+    style={
+      Object {
+        "border": "1px solid black",
+      }
+    }
+  >
+    <Link
+      to="/edit/1"
+    >
+      Gum
+    </Link>
+  </td>
+  <td
+    style={
+      Object {
+        "border": "1px solid black",
+      }
+    }
+  >
+    195
+  </td>
+  <td
+    style={
+      Object {
+        "border": "1px solid black",
+      }
+    }
+  >
+    0
+  </td>
+</tr>
+`;
