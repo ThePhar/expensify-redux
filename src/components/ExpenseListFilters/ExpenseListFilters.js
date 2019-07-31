@@ -1,7 +1,7 @@
-import React from "react";
-import { connect } from "react-redux";
-import { setTextFilter, sortByAmount, sortByDate, setStartDate, setEndDate } from "../../actions/filters";
-import { DateRangePicker } from "react-dates";
+import React                                                                 from 'react';
+import { DateRangePicker }                                                   from 'react-dates';
+import { connect }                                                           from 'react-redux';
+import { setEndDate, setStartDate, setTextFilter, sortByAmount, sortByDate } from '../../actions/filters';
 
 export class ExpenseListFilters extends React.Component {
     state = {
@@ -18,9 +18,9 @@ export class ExpenseListFilters extends React.Component {
         this.props.setTextFilter(e.target.value);
     };
     onSortByChange = (e) => {
-        if (e.target.value === "date")
+        if (e.target.value === 'date')
             this.props.sortByDate();
-        else if (e.target.value === "amount")
+        else if (e.target.value === 'amount')
             this.props.sortByAmount();
     };
 

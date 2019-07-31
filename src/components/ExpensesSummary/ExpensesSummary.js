@@ -1,16 +1,16 @@
-import React from "react";
-import { connect } from "react-redux";
-import getExpensesTotal from "../../selectors/getExpensesTotal";
-import numeral from "numeral";
-import getVisibleExpenses from "../../selectors/getVisibleExpenses";
+import numeral            from 'numeral';
+import React              from 'react';
+import { connect }        from 'react-redux';
+import getExpensesTotal   from '../../selectors/getExpensesTotal';
+import getVisibleExpenses from '../../selectors/getVisibleExpenses';
 
 export const ExpensesSummary = (props) => (
     <p>
         Viewing {props.expenseCount}
         {
-            props.expenseCount === 1 ? " expense " : " expenses "
+            props.expenseCount === 1 ? ' expense ' : ' expenses '
         }
-        totalling {numeral(props.expenseTotal / 100).format("$0,0.00")}
+        totalling {numeral(props.expenseTotal / 100).format('$0,0.00')}
     </p>
 );
 

@@ -4,7 +4,9 @@ exports[`Should render ExpenseList with empty message. 1`] = `
 <table>
   <tbody>
     <tr>
-      No expenses found.
+      <td>
+        No expenses found.
+      </td>
     </tr>
   </tbody>
 </table>

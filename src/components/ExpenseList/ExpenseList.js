@@ -1,14 +1,14 @@
-import React from "react";
-import { connect } from "react-redux";
-import ExpenseListItem from "../ExpenseListItem/ExpenseListItem";
-import getVisibleExpenses from "../../selectors/getVisibleExpenses";
+import React              from 'react';
+import { connect }        from 'react-redux';
+import getVisibleExpenses from '../../selectors/getVisibleExpenses';
+import ExpenseListItem    from '../ExpenseListItem/ExpenseListItem';
 
 export const ExpenseList = (props) => (
     <table>
         <tbody>
         {
             props.expenses.length === 0 ? (
-                <tr>No expenses found.</tr>
+                <tr><td>No expenses found.</td></tr>
             ) : (
                 props.expenses.map((expense) => (<ExpenseListItem key={expense.id} {...expense} />))
             )
@@ -17,10 +17,8 @@ export const ExpenseList = (props) => (
     </table>
 );
 
-const mapStateToProps = (state) => {
-    return {
-        expenses: getVisibleExpenses(state.expenses, state.filters)
-    };
-};
+const mapStateToProps = (state) => ({
+    expenses: getVisibleExpenses(state.expenses, state.filters)
+});
 
 export default connect(mapStateToProps)(ExpenseList);
