@@ -5,11 +5,12 @@ export const addExpense = (expense) => ({
     expense
 });
 
+// startAddExpense(expenseData = {}) ==> function(dispatch) ==> Promise<Reference> ==> call dispatch()
 export const startAddExpense = (expenseData = {}) => {
     return (dispatch) => {
         const { description = '', note = '', amount = 0, createdAt = 0 } = expenseData;
         const expense = { description, note, amount, createdAt };
-        database.ref('expenses').push(expense).then((ref) => {
+        return database.ref('expenses').push(expense).then((ref) => {
             dispatch(addExpense({ id: ref.key, ...expense }));
         });
     };
@@ -25,3 +26,10 @@ export const editExpense = (id, updates) => ({
     id,
     updates
 });
+
+export const setExpenses = (expenses) => ({
+    type: 'SET_EXPENSES',
+    expenses
+});
+
+// export const startSetExpenses;

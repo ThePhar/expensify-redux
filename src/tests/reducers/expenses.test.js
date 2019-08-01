@@ -59,3 +59,21 @@ test('Should not edit expense if expense not found', () => {
     const state = expensesReducer(expenses, action);
     expect(state).toEqual(expenses);
 });
+
+test('Should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses
+    };
+    // This should get cleared by a set expenses action.
+    const initialState = [{
+        id: 0,
+        description: 'Data to be cleared!',
+        note: '',
+        amount: 999999,
+        createdAt: 0
+    }];
+
+    const state = expensesReducer(initialState, action);
+    expect(state).toEqual(expenses);
+});
