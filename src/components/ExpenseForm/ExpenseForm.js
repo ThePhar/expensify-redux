@@ -2,6 +2,8 @@ import moment               from 'moment';
 import React                from 'react';
 import { SingleDatePicker } from 'react-dates';
 
+import './ExpenseListForm.scss';
+
 export default class ExpenseForm extends React.Component {
     constructor(props) {
         super(props);
@@ -60,9 +62,9 @@ export default class ExpenseForm extends React.Component {
 
     render() {
         return (
-            <div>
-                {this.state.error && <p>{this.state.error}</p>}
+            <div className="form-layout">
                 <form onSubmit={this.onSubmit}>
+                    {this.state.error && <p>{this.state.error}</p>}
                     <input
                         type="text"
                         placeholder="Description"
@@ -92,7 +94,7 @@ export default class ExpenseForm extends React.Component {
                         value={this.state.note}
                         onChange={this.onNoteChange}
                     /><br />
-                    <button>Submit</button>
+                    <button className="button">Submit</button>
                 </form>
             </div>
         );

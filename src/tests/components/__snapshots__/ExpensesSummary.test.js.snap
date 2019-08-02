@@ -1,21 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render summary of a single expense with singular noun. 1`] = `
-<p>
-  Viewing 
-  1
-   expense 
-  totalling 
-  $1,095.00
-</p>
+<div
+  className="ma3 br3 flex items-center justify-center pa4 bg-lightest-blue navy"
+>
+  <svg
+    className="w1"
+    data-icon="info"
+    style={
+      Object {
+        "fill": "currentcolor",
+      }
+    }
+    viewBox="0 0 32 32"
+  >
+    <title>
+      info icon
+    </title>
+    <path
+      d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"
+    />
+  </svg>
+  <span
+    className="lh-title ml3"
+  >
+    Viewing 
+    1
+     
+    expense
+     totalling 
+    $1,095.00
+  </span>
+</div>
 `;
 
 exports[`Should render summary of multiple expenses with plural noun. 1`] = `
-<p>
-  Viewing 
-  3
-   expenses 
-  totalling 
-  $1,141.95
-</p>
+<div
+  className="ma3 br3 flex items-center justify-center pa4 bg-lightest-blue navy"
+>
+  <svg
+    className="w1"
+    data-icon="info"
+    style={
+      Object {
+        "fill": "currentcolor",
+      }
+    }
+    viewBox="0 0 32 32"
+  >
+    <title>
+      info icon
+    </title>
+    <path
+      d="M16 0 A16 16 0 0 1 16 32 A16 16 0 0 1 16 0 M19 15 L13 15 L13 26 L19 26 z M16 6 A3 3 0 0 0 16 12 A3 3 0 0 0 16 6"
+    />
+  </svg>
+  <span
+    className="lh-title ml3"
+  >
+    Viewing 
+    3
+     
+    expenses
+     totalling 
+    $1,141.95
+  </span>
+</div>
 `;

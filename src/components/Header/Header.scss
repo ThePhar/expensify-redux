@@ -1,12 +1,26 @@
-.nav {
-    display: flex;
+@import '../../index.scss';
 
-    .nav__link {
-        padding: 0 1rem 0.5rem;
+.header {
+    display: flex;
+    background-color: #364051;
+    justify-content: space-between;
+    padding: 0 $l-size;
+
+    .header__title {
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        line-height: 1;
+        padding: 0;
     }
 
-    .nav__link--active {
-        font-weight: bold;
-        color: red;
+    .header__button {
+        background: none;
+        border: none;
+        color: white;
+        font-size: $l-size;
+        font-weight: 300;
+        line-height: 1;
+        padding: 0;
     }
 }

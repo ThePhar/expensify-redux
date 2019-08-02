@@ -2,6 +2,11 @@
 
 exports[`Should render EditExpensePage correctly. 1`] = `
 <div>
+  <h1
+    className="ma4"
+  >
+    View/Edit An Expense
+  </h1>
   <ExpenseForm
     expense={
       Object {
@@ -15,6 +20,7 @@ exports[`Should render EditExpensePage correctly. 1`] = `
     onSubmit={[Function]}
   />
   <button
+    className="button remove"
     onClick={[Function]}
   >
     Remove

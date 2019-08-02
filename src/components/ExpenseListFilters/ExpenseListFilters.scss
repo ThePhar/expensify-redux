@@ -1,0 +1,50 @@
+@import '~tachyons/css/tachyons.css';
+
+.filterInput {
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 24px;
+    height: 48px;
+    margin-right: 0.5rem;
+    padding: 11px;
+    color: #484848;
+    border: 1px solid #dbdbdb;
+}
+
+.button {
+    line-height: 24px;
+    flex-grow: 1;
+    height: 48px;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    background: cornflowerblue;
+}
+
+.button.remove {
+    margin: 0.5rem 1rem 1rem;
+    background-color: red;
+}
+
+.add-expense {
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 60em) {
+    .filterInput {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .add-expense {
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .DateRangePickerInput {
+        width: 100%;
+        text-align: center;
+    }
+}

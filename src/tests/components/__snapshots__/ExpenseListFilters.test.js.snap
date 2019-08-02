@@ -1,13 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseListFilters correctly. 1`] = `
-<div>
+<div
+  className="ma3 flex flex-column flex-column-m  flex-row-ns"
+>
   <input
+    className="filterInput"
     onChange={[Function]}
+    placeholder="Filter by name..."
     type="text"
     value=""
   />
   <select
+    className="filterInput"
     onChange={[Function]}
     value="date"
   >
@@ -119,17 +124,28 @@ exports[`Should render ExpenseListFilters correctly. 1`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <Link
+    className="button add-expense"
+    to="/create"
+  >
+    Add Expense
+  </Link>
 </div>
 `;
 
 exports[`Should render ExpenseListFilters with alt filters correctly. 1`] = `
-<div>
+<div
+  className="ma3 flex flex-column flex-column-m  flex-row-ns"
+>
   <input
+    className="filterInput"
     onChange={[Function]}
+    placeholder="Filter by name..."
     type="text"
     value="bill"
   />
   <select
+    className="filterInput"
     onChange={[Function]}
     value="amount"
   >
@@ -241,5 +257,11 @@ exports[`Should render ExpenseListFilters with alt filters correctly. 1`] = `
     withFullScreenPortal={false}
     withPortal={false}
   />
+  <Link
+    className="button add-expense"
+    to="/create"
+  >
+    Add Expense
+  </Link>
 </div>
 `;

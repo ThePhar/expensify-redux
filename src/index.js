@@ -10,6 +10,7 @@ import configureStore         from './store/configureStore';
 import 'normalize-css/normalize.css';
 import 'react-dates/lib/css/_datepicker.css';
 import './index.scss';
+import 'tachyons';
 
 import 'react-dates/initialize';
 

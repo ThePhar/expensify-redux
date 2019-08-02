@@ -4,17 +4,22 @@ import getVisibleExpenses from '../../selectors/getVisibleExpenses';
 import ExpenseListItem    from '../ExpenseListItem/ExpenseListItem';
 
 export const ExpenseList = (props) => (
-    <table>
-        <tbody>
-        {
-            props.expenses.length === 0 ? (
-                <tr><td>No expenses found.</td></tr>
-            ) : (
-                props.expenses.map((expense) => (<ExpenseListItem key={expense.id} {...expense} />))
-            )
-        }
-        </tbody>
-    </table>
+    <div className="pa4">
+        <div className="overflow-auto">
+            <table className="f3 w-100 center" cellSpacing="0">
+                <thead>
+                <tr className="stripe-dark">
+                    <th className="fw6 tl pa3 bg-white">Description</th>
+                    <th className="fw6 tl pa3 bg-white">Date</th>
+                    <th className="fw6 tl pa3 bg-white">Amount</th>
+                </tr>
+                </thead>
+                <tbody className="lh-copy">
+                    { props.expenses.map((expense) => <ExpenseListItem key={expense.id} {...expense} />) }
+                </tbody>
+            </table>
+        </div>
+    </div>
 );
 
 const mapStateToProps = (state) => ({

@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+// Colors
+$transparent-white: fade-out(white, 0.05);
+
+.box-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url('background.jpg');
+    background-size: cover;
+
+    .box-layout__box {
+        width: 30rem;
+        padding: $l-size $m-size;
+        text-align: center;
+        border-radius: 3px;
+        background-color: $transparent-white;
+    }
+
+    .box-layout__title {
+        line-height: 1;
+        margin: 0 0 $m-size 0;
+    }
+
+    button {
+        font-size: 1.8rem;
+        font-weight: 300;
+        padding: $s-size;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        background-color: cornflowerblue;
+    }
+}

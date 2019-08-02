@@ -1,44 +1,106 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseList with empty message. 1`] = `
-<table>
-  <tbody>
-    <tr>
-      <td>
-        No expenses found.
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div
+  className="pa4"
+>
+  <div
+    className="overflow-auto"
+  >
+    <table
+      cellSpacing="0"
+      className="f3 w-100 center"
+    >
+      <thead>
+        <tr
+          className="stripe-dark"
+        >
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Description
+          </th>
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Date
+          </th>
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="lh-copy"
+      />
+    </table>
+  </div>
+</div>
 `;
 
 exports[`Should render ExpenseList with expenses. 1`] = `
-<table>
-  <tbody>
-    <ExpenseListItem
-      amount={195}
-      createdAt={0}
-      description="Gum"
-      id="1"
-      key="1"
-      note=""
-    />
-    <ExpenseListItem
-      amount={109500}
-      createdAt={-345600000}
-      description="Rent bill"
-      id="2"
-      key="2"
-      note=""
-    />
-    <ExpenseListItem
-      amount={4500}
-      createdAt={345600000}
-      description="Credit Card"
-      id="3"
-      key="3"
-      note=""
-    />
-  </tbody>
-</table>
+<div
+  className="pa4"
+>
+  <div
+    className="overflow-auto"
+  >
+    <table
+      cellSpacing="0"
+      className="f3 w-100 center"
+    >
+      <thead>
+        <tr
+          className="stripe-dark"
+        >
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Description
+          </th>
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Date
+          </th>
+          <th
+            className="fw6 tl pa3 bg-white"
+          >
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="lh-copy"
+      >
+        <ExpenseListItem
+          amount={195}
+          createdAt={0}
+          description="Gum"
+          id="1"
+          key="1"
+          note=""
+        />
+        <ExpenseListItem
+          amount={109500}
+          createdAt={-345600000}
+          description="Rent bill"
+          id="2"
+          key="2"
+          note=""
+        />
+        <ExpenseListItem
+          amount={4500}
+          createdAt={345600000}
+          description="Credit Card"
+          id="3"
+          key="3"
+          note=""
+        />
+      </tbody>
+    </table>
+  </div>
+</div>
 `;

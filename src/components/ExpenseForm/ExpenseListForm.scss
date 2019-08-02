@@ -1,0 +1,39 @@
+.form-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+    form {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    input {
+        border: 1px solid #dbdbdb;
+        font-weight: 200;
+        font-size: 19px;
+        line-height: 24px;
+        color: #484848;
+        padding: 11px;
+        height: 48px;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    textarea {
+        border: 1px solid #dbdbdb;
+        font-weight: 200;
+        font-size: 19px;
+        line-height: 24px;
+        color: #484848;
+        padding: 11px;
+        height: calc(48px * 4);
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+
+    .SingleDatePickerInput__withBorder {
+        border: none;
+    }
+}

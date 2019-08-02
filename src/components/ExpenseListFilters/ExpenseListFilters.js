@@ -1,7 +1,10 @@
 import React                                                                 from 'react';
 import { DateRangePicker }                                                   from 'react-dates';
 import { connect }                                                           from 'react-redux';
+import { Link }                                                              from 'react-router-dom';
 import { setEndDate, setStartDate, setTextFilter, sortByAmount, sortByDate } from '../../actions/filters';
+
+import './ExpenseListFilters.scss';
 
 export class ExpenseListFilters extends React.Component {
     state = {
@@ -26,9 +29,9 @@ export class ExpenseListFilters extends React.Component {
 
     render() {
         return (
-            <div>
-                <input type="text" value={this.props.filters.text} onChange={this.onTextChange} />
-                <select value={this.props.filters.sortBy} onChange={this.onSortByChange}>
+            <div className="ma3 flex flex-column flex-column-m  flex-row-ns">
+                <input className="filterInput" type="text" value={this.props.filters.text} onChange={this.onTextChange} placeholder="Filter by name..." />
+                <select className="filterInput" value={this.props.filters.sortBy} onChange={this.onSortByChange}>
                     <option value="date">Date</option>
                     <option value="amount">Amount</option>
                 </select>
@@ -44,6 +47,7 @@ export class ExpenseListFilters extends React.Component {
                     numberOfMonths={1}
                     showClearDates
                 />
+                <Link className='button add-expense' to='/create'>Add Expense</Link>
             </div>
         );
     }

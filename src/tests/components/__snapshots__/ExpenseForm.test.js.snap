@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should render ExpenseForm correctly. 1`] = `
-<div>
+<div
+  className="form-layout"
+>
   <form
     onSubmit={[Function]}
   >
@@ -116,7 +118,9 @@ exports[`Should render ExpenseForm correctly. 1`] = `
       value=""
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Submit
     </button>
   </form>
@@ -124,7 +128,9 @@ exports[`Should render ExpenseForm correctly. 1`] = `
 `;
 
 exports[`Should render ExpenseForm with expense data 1`] = `
-<div>
+<div
+  className="form-layout"
+>
   <form
     onSubmit={[Function]}
   >
@@ -239,7 +245,9 @@ exports[`Should render ExpenseForm with expense data 1`] = `
       value=""
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Submit
     </button>
   </form>
@@ -247,7 +255,9 @@ exports[`Should render ExpenseForm with expense data 1`] = `
 `;
 
 exports[`Should render error for invalid form submission. 1`] = `
-<div>
+<div
+  className="form-layout"
+>
   <form
     onSubmit={[Function]}
   >
@@ -362,7 +372,9 @@ exports[`Should render error for invalid form submission. 1`] = `
       value=""
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Submit
     </button>
   </form>
@@ -370,13 +382,15 @@ exports[`Should render error for invalid form submission. 1`] = `
 `;
 
 exports[`Should render error for invalid form submission. 2`] = `
-<div>
-  <p>
-    Please provide description and amount.
-  </p>
+<div
+  className="form-layout"
+>
   <form
     onSubmit={[Function]}
   >
+    <p>
+      Please provide description and amount.
+    </p>
     <input
       autoFocus={true}
       onChange={[Function]}
@@ -488,7 +502,9 @@ exports[`Should render error for invalid form submission. 2`] = `
       value=""
     />
     <br />
-    <button>
+    <button
+      className="button"
+    >
       Submit
     </button>
   </form>
