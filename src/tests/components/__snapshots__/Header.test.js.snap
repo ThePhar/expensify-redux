@@ -12,9 +12,9 @@ exports[`Should render Header correctly. 1`] = `
       activeClassName="nav__link--active"
       className="nav__link"
       exact={true}
-      to="/"
+      to="/dashboard"
     >
-      Home
+      Dashboard
     </NavLink>
     <NavLink
       activeClassName="nav__link--active"
@@ -23,6 +23,11 @@ exports[`Should render Header correctly. 1`] = `
     >
       Create New Expense
     </NavLink>
+    <button
+      onClick={[MockFunction]}
+    >
+      Logout
+    </button>
   </nav>
 </header>
 `;
